@@ -47,9 +47,9 @@
     <changeSet author="matzew (generated)" id="1504688114371-16">
         <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="flat_push_message_info"/>
     </changeSet>
-    <changeSet author="matzew (generated)" id="1504688114371-22">
+    <!-- changeSet author="matzew (generated)" id="1504688114371-22">
         <addPrimaryKey columnNames="push_message_variant_id" constraintName="PRIMARY" tableName="variant_error_status"/>
-    </changeSet>
+    </changeSet-->
     <changeSet author="matzew (generated)" id="1504688114371-24">
         <addForeignKeyConstraint baseColumnNames="variant_id" baseTableName="variant_error_status" constraintName="FK1s1tg8hp9lg1xl1qjch7cdfck" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="variant"/>
     </changeSet>
@@ -57,7 +57,7 @@
         <addForeignKeyConstraint baseColumnNames="push_job_id" baseTableName="variant_error_status" constraintName="FKdmlblfx0dwdklc2xnjhp58hav" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="flat_push_message_info"/>
     </changeSet>
     <changeSet author="matzew (generated)" id="1504688114371-35">
-        <createIndex indexName="app_open_counter_idx" tableName="flat_push_message_info" unique="false">
+        <createIndex indexName="idx_app_open_counter" tableName="flat_push_message_info" unique="false">
             <column name="app_open_counter"/>
         </createIndex>
     </changeSet>
@@ -67,7 +67,7 @@
         </createIndex>
     </changeSet>
     <changeSet author="matzew (generated)" id="1504688114371-37">
-        <createIndex indexName="submit_date_idx" tableName="flat_push_message_info" unique="false">
+        <createIndex indexName="idx_submit_date" tableName="flat_push_message_info" unique="false">
             <column name="submit_date"/>
         </createIndex>
     </changeSet>
