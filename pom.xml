@@ -226,7 +226,8 @@
     <ant.contrib.version>20020829</ant.contrib.version>
     <aerogear.crypto.version>0.1.5</aerogear.crypto.version>
     <prometheus.simpleclient.version>0.3.0</prometheus.simpleclient.version>
-    <ups.ddl_value>update</ups.ddl_value>
+    <ups.ddl_value>validate</ups.ddl_value>
+    <!-- ups.ddl_value>update</ups.ddl_value-->
   </properties>
 
   <profiles>
@@ -264,7 +265,8 @@
         <module>dist</module>
       </modules>
       <properties>
-        <ups.ddl_value>update</ups.ddl_value>
+        <ups.ddl_value>validate</ups.ddl_value>
+        <!-- ups.ddl_value>update</ups.ddl_value-->
       </properties>
     </profile>
 
